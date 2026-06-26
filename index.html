@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação & Inteligência Artificial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Educa<strong>IA</strong></div>
+        <ul class="nav-links">
+            <li><a href="#" class="active" data-target="home">Início</a></li>
+            <li><a href="#" data-target="impactos">Impactos</a></li>
+            <li><a href="#" data-target="desafios">Desafios</a></li>
+        </ul>
+        <button class="btn-primary" id="btn-contato">Fale Conosco</button>
+    </nav>
+
+    <main class="container">
+        <section id="home" class="tab-content active">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <h1>O Futuro da Pedagogia</h1>
+                    <p class="main-text">
+                        A IA na pedagogia transforma a educação ao personalizar o ensino para o ritmo de cada aluno e automatizar tarefas burocráticas dos professores. O grande objetivo atual é usar essa tecnologia para somar no aprendizado de forma ética.
+                    </p>
+                    <div class="cta-buttons">
+                        <button class="btn-primary" onclick="document.querySelector('[data-target=\'impactos\']').click()">Ver Impactos</button>
+                        <button class="btn-secondary" id="btn-saber-mais">Saber Mais</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=600&q=80" alt="Estudante usando tecnologia">
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="100">0</span><span>%</span>
+                    <p>Ensino Personalizado</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="40">0</span><span>h/mês</span>
+                    <p>Poupadas por Professores</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="impactos" class="tab-content">
+            <h2>Pilares da Transformação</h2>
+            <p class="section-subtitle">Como a tecnologia atua no dia a dia escolar.</p>
+            
+            <div class="cards-grid">
+                <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=400&q=80" alt="Análise de dados" class="card-img">
+                    <h3>Adaptação</h3>
+                    <p>Plataformas que identificam lacunas no aprendizado e sugerem exercícios específicos para as necessidades de cada estudante.</p>
+                    <button class="btn-card">Ler Artigo</button>
+                </div>
+                <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=400&q=80" alt="Professora estudando" class="card-img">
+                    <h3>Eficiência</h3>
+                    <p>Sistemas automatizados de avaliação dão feedback imediato aos alunos e liberam os professores para a mentoria humana.</p>
+                    <button class="btn-card">Ver Dados</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="desafios" class="tab-content">
+            <h2>Desafios Éticos</h2>
+            <div class="alert-box">
+                <div class="alert-content">
+                    <h3>Uso Crítico vs. Dependência</h3>
+                    <p>O papel da escola mudou: o foco não é proibir o uso de ferramentas de IA, mas ensinar os alunos a validarem dados, pensarem por si mesmos e usarem a tecnologia como copiloto.</p>
+                    <div class="feedback-section">
+                        <p>Esse conteúdo foi útil?</p>
+                        <button class="btn-like" id="like-btn">👍 Útil (<span id="like-count">12</span>)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EducaIA - Tecnologia na Educação</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
